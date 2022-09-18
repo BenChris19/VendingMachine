@@ -1,0 +1,8 @@
+Mars::2.10::0
+Milkyway::2.00::0
+McCoys::1.30::18
+Haribo::1.60::9
+Sanwich::1.50::1000
+Malteasers::2.10::5
+Fanta::2.50::12
+Powerade::1.05::17
