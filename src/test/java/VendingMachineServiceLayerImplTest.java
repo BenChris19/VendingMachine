@@ -21,10 +21,18 @@ import service.NoItemInventoryException;
 import service.VendingMachineServiceLayer;
 import service.VendingMachineServiceLayerImpl;
 
+/**
+ * Unit testing for Vending machine. Checks if all operations have been performed appropriately.
+ * @author benat
+ *
+ */
 class VendingMachineServiceLayerImplTest {
 
 	private VendingMachineServiceLayer service;
 	
+	/**
+	 * Creates test constructor
+	 */
 	public VendingMachineServiceLayerImplTest() {
 		VendingMachineDao dao = new VendingMachineDaoImpl("VendingMachineTest.txt");
 		VendingMachineAuditDao auditDao = new VendingMachineAuditDaoImpl("AuditTest.txt");
@@ -49,6 +57,10 @@ class VendingMachineServiceLayerImplTest {
     public void tearDown() {
     }
 
+    /**
+     * Check if correct value is returned and that actual item is bought.
+     * @throws Exception
+     */
     @Test
     public void buyValidItem() throws Exception{
     	
@@ -86,8 +98,18 @@ class VendingMachineServiceLayerImplTest {
     	}
     }
     
+    /**
+     * Test if program fails if user hasn't got enough money
+     * @throws service.DataValidationException 
+     * @throws InsufficientFundsException
+     * @throws NoItemInventoryException
+     * @throws VendingMachinePersistenceException
+     * @throws DataValidationException
+     * @throws InvalidItemException
+     * @throws service.DataValidationException
+     */
     @Test
-    public void testNotEnoughMoney() throws Exception{
+    public void testInsufficeintFunds() throws service.DataValidationException{
     	String itemName = "Milkyway";
     	BigDecimal cash = new BigDecimal("1.00");
     	
@@ -103,12 +125,21 @@ class VendingMachineServiceLayerImplTest {
     	}
     }
     
+    /**
+     * 
+     * @throws InsufficientFundsException
+     * @throws NoItemInventoryException
+     * @throws VendingMachinePersistenceException
+     * @throws DataValidationException
+     * @throws InvalidItemException
+     * @throws service.DataValidationException
+     */
     @Test
     public void testNoItemsLeft() throws InsufficientFundsException, NoItemInventoryException, 
     VendingMachinePersistenceException, DataValidationException, InvalidItemException, service.DataValidationException {
     	String itemName = "Milkyway";
     	BigDecimal cash = new BigDecimal("3.00");
-    	//Update inventory in VendingMachine.txt to 10 so that test works
+    	//Update inventory in VendingMachineTest.txt to 10 so that test works
     	
     	for(int i = 0; i < 10; i++) {
     		service.buyItems(itemName, cash);
@@ -127,7 +158,11 @@ class VendingMachineServiceLayerImplTest {
     }
     
     @Test
-    public void testInvalidItem() throws Exception{
+    /**
+     * Test if the user want's to purchase an item not in the vending machine
+     * @throws service.DataValidationException
+     */
+    public void testInvalidItem() throws service.DataValidationException{
     	
     	String itemName = "Dairymilk";
     	BigDecimal cash = new BigDecimal("3.00");

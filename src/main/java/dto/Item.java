@@ -8,6 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 
+/**
+ * Item from the vending machine. With its name, price and amount
+ * @author benat
+ *
+ */
 public class Item {
 	
 	private String itemName;

@@ -1,5 +1,10 @@
 package service;
 
+/**
+ * Throw an error if the inventory is empty for a certain item
+ * @author benat
+ *
+ */
 @SuppressWarnings("serial")
 public class NoItemInventoryException extends Exception {
 

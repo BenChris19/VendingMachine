@@ -51,3 +51,39 @@
 2022-09-17T17:06:22.397377900 : Items were purchased
 2022-09-17T17:06:22.403342600 : Items were purchased
 2022-09-17T17:06:22.408350300 : Items were purchased
+2022-09-21T19:05:07.303067100 : Insufficient funds detected
+2022-09-21T19:05:07.321071700 : Invalid item was entered
+2022-09-21T19:05:07.326072500 : Items were purchased
+2022-09-21T19:05:07.341067100 : Item with 0 stock was tried to be purchased
+2022-09-21T19:05:31.775975900 : Insufficient funds detected
+2022-09-21T19:05:31.794975600 : Invalid item was entered
+2022-09-21T19:05:31.798976700 : Items were purchased
+2022-09-21T19:05:31.813976700 : Item with 0 stock was tried to be purchased
+2022-09-21T19:05:48.078220500 : Insufficient funds detected
+2022-09-21T19:05:48.092219700 : Invalid item was entered
+2022-09-21T19:05:48.096220500 : Items were purchased
+2022-09-21T19:05:48.109219900 : Items were purchased
+2022-09-21T19:05:48.116219500 : Items were purchased
+2022-09-21T19:05:48.122219400 : Items were purchased
+2022-09-21T19:05:48.129219200 : Items were purchased
+2022-09-21T19:05:48.135220100 : Items were purchased
+2022-09-21T19:05:48.141219 : Items were purchased
+2022-09-21T19:05:48.147219200 : Items were purchased
+2022-09-21T19:05:48.153220 : Items were purchased
+2022-09-21T19:05:48.159221100 : Items were purchased
+2022-09-21T19:05:48.164219800 : Items were purchased
+2022-09-21T19:05:48.170221100 : Item with 0 stock was tried to be purchased
+2022-09-21T19:09:27.721657300 : Invalid item was entered
+2022-09-21T19:09:27.738688200 : Items were purchased
+2022-09-21T19:09:27.752688300 : Items were purchased
+2022-09-21T19:09:27.758687800 : Items were purchased
+2022-09-21T19:09:27.765688400 : Items were purchased
+2022-09-21T19:09:27.771689100 : Items were purchased
+2022-09-21T19:09:27.778689900 : Items were purchased
+2022-09-21T19:09:27.784687900 : Items were purchased
+2022-09-21T19:09:27.791657500 : Items were purchased
+2022-09-21T19:09:27.796690400 : Items were purchased
+2022-09-21T19:09:27.802687800 : Items were purchased
+2022-09-21T19:09:27.808693100 : Items were purchased
+2022-09-21T19:09:27.814687400 : Item with 0 stock was tried to be purchased
+2022-09-21T19:09:27.817687 : Insufficient funds detected

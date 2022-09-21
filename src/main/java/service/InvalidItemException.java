@@ -1,5 +1,10 @@
 package service;
 
+/**
+ * Throw error if the item the user wants to retrieve does not exist.
+ * @author benat
+ *
+ */
 @SuppressWarnings("serial")
 public class InvalidItemException extends Exception {
 
